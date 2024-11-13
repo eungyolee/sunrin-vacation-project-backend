@@ -6,10 +6,7 @@ const port = 3001;
 const cors = require('cors');
 
 // MongoDB 연결 설정
-mongoose.connect('mongodb://root:Awdv0kApsSkK4pryC07MgU0uqhOFg6b02aqXH15Bsv0T5UuZWicrThPIS08b1Vyo@y80ks448gs80w0ks88c4woo4:27017/?directConnection=true', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect('mongodb://root:Awdv0kApsSkK4pryC07MgU0uqhOFg6b02aqXH15Bsv0T5UuZWicrThPIS08b1Vyo@y80ks448gs80w0ks88c4woo4:27017/?directConnection=true');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB 연결 에러:'));
